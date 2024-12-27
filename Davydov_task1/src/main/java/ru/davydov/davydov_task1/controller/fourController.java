@@ -122,15 +122,15 @@ public class fourController {
                         }));
                         timeline.setCycleCount(1);
                         timeline.play();
-                        return ;
+                        return;
                     }
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
 
-        try (BufferedWriter wr = new BufferedWriter(new FileWriter("UserLog.txt", true))) {
+
+            try (BufferedWriter wr = new BufferedWriter(new FileWriter("UserLog.txt", true))) {
                 wr.write(email + ";" + pas);
                 wr.newLine();
                 trylabel.setText("Регистрация успешна!");
@@ -142,6 +142,7 @@ public class fourController {
                 trylabel.setText("Ошибка при сохранении данных.");
             }
         }
+    }
 
 
 
