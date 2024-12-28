@@ -1,4 +1,4 @@
-package ru.davydov.davydov_task1;
+package ru.kozin.zov1;
 
 import javafx.application.Application;
 import javafx.collections.FXCollections;
